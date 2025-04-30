@@ -1,14 +1,16 @@
 "use strict";
 const userForm = document.querySelector('.user-form');
-console.log(userForm);
 const userName = document.querySelector("#name");
 const userEmail = document.querySelector("#email");
-console.log(userEmail);
+const userCountry = document.querySelector("#country");
+console.log(userCountry);
+// console.log(userEmail);
 userForm.addEventListener("submit", (event) => {
     event.preventDefault();
     const data = {
         userName: userName.value,
         userEmail: userEmail.value,
+        userCountry: userCountry.value,
     };
     console.log(data);
 });

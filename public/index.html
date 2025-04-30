@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WellCome</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>WellCome</h1>
     <form class="user-form">
-        <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name">
-        </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email">
-        </div>
-        <button>Submit</button>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" />
+      </div>
+      <div>
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+          <option value="bangladesh">bangladesh</option>
+          <option value="Pakistan">Pakistan</option>
+          <option value="pelastain">pelastain</option>
+        </select>
+      </div>
+      <button>Submit</button>
     </form>
     <script src="../dist/index.js"></script>
     <script src="../dist/app.js"></script>
-</body>
+  </body>
 </html>
