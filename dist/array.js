@@ -3,12 +3,16 @@ let users = [];
 let user1 = {
     id: 1,
     name: "arifa",
-    age: 20
+    age: 20,
 };
 let user2 = {
-    id: 1,
+    id: 2,
     name: "ayma",
-    age: 27
+    age: 27,
 };
 users.push(user1, user2);
+const printUserInfo = (user) => {
+    console.log(`${user.name},${user.age},${user.id}`);
+};
 console.log(users);
+users.forEach((user) => printUserInfo(user));
